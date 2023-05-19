@@ -30,4 +30,4 @@ def multidiffusion_upscale(url: str, input_dir: str, output_dir: str, sampler: s
         response = response2json(url, "img2img", payload)
 
         decoded_img = decode_img(response['images'][0])
-        decoded_img.save(output_dir + str(i) + '.png')
+        decoded_img.save(output_dir + '/' + str(i) + '.png')

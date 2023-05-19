@@ -36,4 +36,4 @@ def txt2img_openpose(url:str, prompts: json, upscaler: str, sampler: str, openpo
                 break
 
             decoded_img = decode_img(encoded_img)
-            decoded_img.save(output_dir + str(id) + "_" + str(i) + '.png')
+            decoded_img.save(output_dir + '/' + str(id) + "_" + str(i) + '.png')
